@@ -1,0 +1,27 @@
+{% extends "index.html" %} 
+{% block content %}
+<article id="home" class="panel intro">
+								<header>
+                                    {% if success %}
+									<h1>Email Sent</h1>
+                                    {% else %}
+                                    <h1>Please Try again later</h1>
+                                    {% endif %}
+                                    <p>Please wait or click <a href='/'>here</a> to back</p>
+                                </header>
+
+</article>
+
+
+
+{% endblock %}
+
+{%block custom_script%}
+<script charset="utf-8">
+    $(document).ready(function(){
+            setTimeout(function(){
+                window.location.href = '/'
+            }, 2000)
+        })
+</script>
+{% endblock %}

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+        <!-- Primary Meta Tags -->
+        <title>Muhammad Ihfazhillah</title>
+        <meta name="title" content="Muhammad Ihfazhillah">
+        <meta name="description" content="Bring your idea into wild. Software Engineer. Mostly writing in python. Lecturer, a dad and coffe addict :D">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ihfazh.com/">
+        <meta property="og:title" content="Muhammad Ihfazhillah">
+        <meta property="og:description" content="Bring your idea into wild. Software Engineer. Mostly writing in python. Lecturer, a dad and coffe addict :D">
+        <meta property="og:image" content="/static/img/komputer_jadulku.jpeg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://ihfazh.com/">
+        <meta property="twitter:title" content="Muhammad Ihfazhillah">
+        <meta property="twitter:description" content="Bring your idea into wild. Software Engineer. Mostly writing in python. Lecturer, a dad and coffe addict :D">
+        <meta property="twitter:image" content="/static/img/komputer_jadulku.jpeg">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon fa-home"><span>Home</span></a>
+						<a href="#work" class="icon fa-folder"><span>Work</span></a>
+						<a href="#reviews" class="icon fa-comment"><span>Reviews</span></a>
+						<a href="#articles" class="icon fa-rss"><span>Articles</span></a>
+						<a href="#python" class="icon fa-hashtag"><span>Scripts</span></a>
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Muhammad Ihfazhillah</h1>
+									<p>Software Engineer, a dad, lecturer.</p>
+
+                                    <div class="contacts">
+                                        <a target="_blank" href="https://facebook.com/mihfazhillah" class="icon fa-facebook"></a>
+                                        <a target="_blank" href="https://github.com/ihfazhillah" class="icon fa-github"></a>
+                                        <a target="_blank" href="https://gitlab.com/ihfazhillah" class="icon fa-gitlab"></a>
+                                        <a target="_blank" href="https://medium.com/@mihfazhillah" class="icon fa-medium"></a>
+                                        <a target="_blank" href="https://twitter.com/alaminiy" class="icon fa-twitter"></a>
+                                    </div>
+
+
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<img src="static/img/komputer_jadulku.jpeg" alt="" />
+								</a>
+							</article>
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+							<h2>Work</h2>
+								</header>
+								<p>
+                                    Bring Idea into reality.
+                                </p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="static/img/portfolio/targeem-1.jpg" alt="Tarjeem - arab indo translator desktop"></a>
+                                            <figcaption>Targeem - Arab Indo Translator. Written in python with pygtk.</figcaption>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="static/img/portfolio/lontar-on-mobile.jpg" alt=""></a>
+                                            <figcaption>Lontar - GPS On precise. RTKLIB on desktop. Flask, Socketio, Reactjs.</figcaption>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="static/img/portfolio/locast.png" alt=""></a>
+                                            <figcaption>Locast - NTRIP Caster with dashboard. Django, Django Channel, Redis.</figcaption>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+                                <form id="email" action="{{ url_for('script_mail') }}" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+                                            <input type="hidden" name="g-recaptcha-response" class='recaptcha'>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+							<article id="python" class="panel">
+								<header>
+									<h2>Python Scripts</h2>
+                                    <p>Simple Python Scripts I made. Let's play!</p>
+								</header>
+
+                                <div class="scripts">
+                                    <h4>Qaamus</h4>
+                                    <p>Python wrapper for qaamus.com site. Indonesian arabic translator<br>
+                                    Repo: <a href="https://github.com/ihfazhillah/qaamus2/" target="_blank">Github</a>
+                                    <br>
+                                    <a href="/qaamus">Let's Play</a></p>
+                                </div>
+
+
+							</article>
+
+							<article id="articles" class="panel">
+								<header>
+									<h2>Latest Articles</h2>
+								</header>
+
+                                <div class="entries">
+                                </div>
+
+
+								
+							</article>
+
+							<article id="reviews" class="panel">
+								<header>
+									<h2>Reviews</h2>
+								</header>
+								
+                                <p>TODO</p>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; 
+                                <a href="https://ihfazh.com">Ihfazhillah</a>
+                                .</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+                                             <script src="https://www.google.com/recaptcha/api.js?render=6LfRmaQUAAAAAD1FOwazvGomquu9JJlizdGJPKEt"></script>
+  <script>
+      $("#email").submit(function(e){
+          var form = this
+          e.preventDefault()
+          grecaptcha.execute('6LfRmaQUAAAAAD1FOwazvGomquu9JJlizdGJPKEt', {action: 'sendmessage'}).then(function(token) {
+              $('.recaptcha').val(token)
+              form.submit()
+          });
+      })
+  </script>
+
+	</body>
+</html>
