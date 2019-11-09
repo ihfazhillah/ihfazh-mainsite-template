@@ -15,6 +15,11 @@
 
 // Breakpoints.
 
+.cta {
+  margin-top: 2rem;
+}
+
+
 	@include breakpoints((
 		xlarge:  ( 1281px,  1680px ),
 		large:   ( 981px,   1280px ),
@@ -407,6 +412,7 @@
 		cursor: pointer;
 		outline: 0;
 		padding: 0.7em 1.5em 0.7em 1.5em;
+    text-decoration: none;
 
 		&:hover {
 			background-color: $red;
@@ -500,10 +506,14 @@
 
 /* Icons */
 
+  .contacts {
+    font-size: 1.25rem;
+  }
 	.icon {
 		position: relative;
 		text-decoration: none;
         margin: 5px;
+        margin-top: 10px;
 
 		&:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -775,6 +785,9 @@
 						letter-spacing: -0.015em;
 						font-size: 1.25em;
 						margin: 0.25em 0 0 0;
+      &.note {
+        font-size: 0.75em;
+      }
 					}
 				}
 

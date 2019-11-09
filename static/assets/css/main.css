@@ -5,6 +5,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.cta {
+  margin-top: 2rem; }
+
 a {
   color: #ca0207; }
 
@@ -908,7 +911,8 @@ button,
   border: 1px solid #ca0207;
   cursor: pointer;
   outline: 0;
-  padding: 0.7em 1.5em 0.7em 1.5em; }
+  padding: 0.7em 1.5em 0.7em 1.5em;
+  text-decoration: none; }
   input[type="button"]:hover,
   input[type="submit"]:hover,
   input[type="reset"]:hover,
@@ -1000,10 +1004,14 @@ ul.actions {
         margin-top: 0; } }
 
 /* Icons */
+.contacts {
+  font-size: 1.25rem; }
+
 .icon {
   position: relative;
   text-decoration: none;
-  margin: 5px; }
+  margin: 5px;
+  margin-top: 10px; }
   .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -1263,6 +1271,8 @@ ul.actions {
           letter-spacing: -0.015em;
           font-size: 1.25em;
           margin: 0.25em 0 0 0; }
+          #main > .panel.intro header p.note {
+            font-size: 0.75em; }
       @media screen and (max-width: 980px) {
         #main > .panel.intro {
           -moz-flex-direction: column;
